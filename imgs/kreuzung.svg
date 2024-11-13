@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="300"
+   height="300"
+   viewBox="0 0 79.374998 79.375"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="kreuzung_4.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="kreuzung_4.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="0.72880595"
+     inkscape:cx="129.66414"
+     inkscape:cy="155.73418"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <sodipodi:guide
+       position="0,79.374999"
+       orientation="0,300"
+       id="guide1"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="79.374999,79.374999"
+       orientation="300,0"
+       id="guide2"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-43.564408,39.622477"
+       orientation="0,-300"
+       id="guide3"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="39.571004,104.96909"
+       orientation="-300,0"
+       id="guide4"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="rect2-5"
+       style="fill:#666666;stroke-width:0.976432;paint-order:stroke fill markers"
+       d="M -4e-6,79.375001 H 79.374991 V 158.75 H -4e-6 Z m 0,-158.75 H 79.374991 V 0 H -4e-6 Z M -79.374999,0 H 158.75 V 79.375001 H -79.374999 Z m 120.4482,91.086171 v 55.562509 h -2.38125 V 91.086171 Z" />
+  </g>
+</svg>

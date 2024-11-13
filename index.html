@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scss/style.scss" />
+    <script defer type="module" src="typescript/main.ts"></script>
+    <script
+      defer
+      type="module"
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      type="module"
+      src="/webcomponents/dist/webcomponents/webcomponents.esm.js"
+    ></script>
+    <link rel="icon" href="imgs/favicon.jpg" type="image/jpg" />
+    <title>Spielteppich-Simulation</title>
+  </head>
+  <body>
+    <nav class="nav-container">
+      <div class="close-open-nav">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xml:space="preserve"
+          viewBox="0 0 48 48"
+        >
+          <path
+            d="M.062.062v21.943h21.943V.062H.062zm0 47.876h21.943V25.995H.062v21.943zm25.933-21.943v21.942h21.942V25.995H25.995zM34.972.063 22.005 13.028l12.966 12.967 12.966-12.966L34.972.063z"
+          />
+        </svg>
+
+        <svg
+          class="arrow-to-left"
+          xmlns="http://www.w3.org/2000/svg"
+          xml:space="preserve"
+          style="enable-background: new 0 0 512 512"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M189.3 128.4 89 233.4c-6 5.8-9 13.7-9 22.4s3 16.5 9 22.4l100.3 105.4c11.9 12.5 31.3 12.5 43.2 0 11.9-12.5 11.9-32.7 0-45.2L184.4 288h217c16.9 0 30.6-14.3 30.6-32s-13.7-32-30.6-32h-217l48.2-50.4c11.9-12.5 11.9-32.7 0-45.2-12-12.5-31.3-12.5-43.3 0z"
+          />
+        </svg>
+      </div>
+
+      <div class="nav">
+        <h4 class="nav__headline">Spielteppich-Simulator</h4>
+
+        <div class="nav__playfield-name">
+          <h5 class="playfield-name-h5">Unsaved</h5>
+        </div>
+
+        <button class="start-driver-btn">Onboarding Tour</button>
+
+        <div class="nav__playfield-size">
+          <div class="width-height-playfield">
+            <label for="size-x"
+              >Breite:
+
+              <input
+                type="number"
+                id="size-x"
+                name="size-x"
+                value="30"
+                placeholder="0"
+              />
+            </label>
+
+            <label for="size-y"
+              >Höhe:
+
+              <input
+                type="number"
+                id="size-y"
+                name="size-y"
+                value="16"
+                placeholder="0"
+              />
+            </label>
+          </div>
+
+          <button class="btn-generate-playfield">Spielfeld generieren</button>
+        </div>
+
+        <div class="nav__random-playfield-btns">
+          <button class="btn-random-playfield">Zufälliger Inhalt</button>
+          <button class="btn-random-size">Zufälliges Spielfeld</button>
+          <!-- <button class="btn-log-all-data">Alle Daten</button> -->
+        </div>
+
+        <div class="nav__scale-playfield">
+          <label for="scale">Spielfeld Skalieren:</label>
+          <input
+            class="scale"
+            type="range"
+            id="scale"
+            name="scale"
+            min="10"
+            max="200"
+          />
+          <button class="btn-default-scale">Standardskalierung</button>
+        </div>
+
+        <div class="nav__speed-range">
+          <label for="speed">Geschwindigkeit:</label>
+          <input
+            class="speed-range"
+            type="range"
+            id="speed"
+            name="speed"
+            min="250"
+            max="1000"
+          />
+          <div class="speed-slider-values">
+            <span>200%</span>
+            <span>50%</span>
+          </div>
+        </div>
+
+        <div class="nav__change-car-numb">
+          <label for="car-numb">Anzahl Autos:</label>
+          <input
+            class="slider-car-numb"
+            type="range"
+            id="car-numb"
+            name="scale"
+          />
+        </div>
+
+        <div class="nav__start-stop-simulation">
+          <span>Simulation stoppen/starten:</span>
+
+          <svg
+            class="simulation-pause-btn"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512"
+          >
+            <path
+              d="M272 63.1h-32c-26.51 0-48 21.49-48 47.1v288c0 26.51 21.49 48 48 48l32 1.8c26.51 0 48-21.49 48-48V112c0-26.51-21.5-48.9-48-48.9zm-192 0H48c-26.51 0-48 21.49-48 48v288C0 426.5 21.49 448 48 448h32c26.51 0 48-21.49 48-48V112c0-26.51-21.5-48.9-48-48.9z"
+            />
+          </svg>
+        </div>
+
+        <div class="nav__street-network">
+          <button class="create-street-network">Straßennetz Festlegen</button>
+        </div>
+
+        <div class="nav__save-load">
+          <div class="manual-save-switch">
+            <span>manuelles Speichern</span>
+            <label class="switch">
+              <input class="input-manual-save" type="checkbox" />
+              <div class="slider"></div>
+            </label>
+          </div>
+
+          <button
+            title="Nur aktiv, wenn manuelles Speichern aktiv"
+            class="btn-save-playfield"
+          >
+            Aktuelles Spielfeld Speichern
+          </button>
+          <form class="form-save-playfield form-save-playfield--hidden">
+            <div>
+              <label for="name">Name:</label>
+              <input class="name-field-state" type="text" id="name" />
+            </div>
+
+            <div>
+              <button class="save-playfield">Speichern</button>
+              <button class="cancel-playfield-save">Abbrechen</button>
+            </div>
+          </form>
+
+          <div
+            class="message-successful-saved message-successful-saved--hidden"
+          >
+            Erfolgreich gespeichert ✔
+          </div>
+          <div class="message-saving-failed message-saving-failed--hidden">
+            <p>Das Spielfeld Konnte nicht</p>
+            <p>gespeichert werden!!!</p>
+          </div>
+          <div class="error-msg-delete error-msg-delete--hidden"></div>
+
+          <div class="saved-playfields-container">
+            <div class="headline-playfields-list">
+              <p>Gespeicherte Spielstände</p>
+              <svg
+                class="fields-list-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 9.718 15"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M9.626 8.085a.648.648 0 0 0 .188-.447.654.654 0 0 0-.188-.458L2.77.325a.655.655 0 0 0-.926 0L.29 1.879a.654.654 0 0 0 0 .926l4.828 4.828L.29 12.461a.654.654 0 0 0 0 .926l1.554 1.554c.255.256.67.256.926 0l6.856-6.856z"
+                />
+              </svg>
+            </div>
+            <ul
+              class="saved-playfields-list saved-playfields-list--hidden"
+            ></ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="playfield-container">
+      <div class="playfield"></div>
+    </div>
+  </body>
+</html>

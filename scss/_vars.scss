@@ -1,0 +1,33 @@
+// nav
+$nav-separation-line: 1px solid #ccc;
+
+// playfield
+$linear-gradient-lawn: linear-gradient(200deg, #50c750, #369436 70.71%);
+$street-color: #777;
+
+$border-tiles: 1px solid #000;
+
+// playfield objects
+$height-icons: 50px;
+$object-z-index: 1;
+
+// cars
+$car-frontside-height: 30px;
+$car-wheels-color: #000;
+
+// forms
+$form-border-radius: 3px;
+$form-gap: 12px;
+$form-padding: 10px;
+$form-font-size: 14px;
+$form-font-size-small: 12px;
+$form-z-index: 3;
+$form-background-color: #fff;
+$form-border: 1px solid #222;
+
+$form-headline-font-size: 16px;
+$form-headline-font-weight: bold;
+$form-svg-cancel-width: 10px;
+
+// popover driverjs
+$background-color-driverjs: #76c076;

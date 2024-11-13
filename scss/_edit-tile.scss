@@ -1,0 +1,34 @@
+@import 'vars';
+
+.edit-tile {
+  &--hidden {
+    display: none;
+  }
+
+  &__select-kind {
+    text-align: center;
+    font-size: $form-font-size-small;
+  }
+
+  &__add-objects {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    input {
+      cursor: pointer;
+    }
+  }
+
+  &__eventarea-settings {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 5px 0;
+
+    input {
+      width: 60px;
+      height: 18px;
+    }
+  }
+}

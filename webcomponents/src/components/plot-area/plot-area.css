@@ -1,0 +1,50 @@
+:host {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  background-color: #6ac54a; /* a6c047 8ca32f 4fc64f */
+  height: 100%;
+  width: 100%;
+  /* box-shadow: 1px 1px 2px #000; */
+  border: 3px dashed rgb(88, 67, 6);
+}
+
+.plot-area__house {
+  width: 95%;
+  max-height: 67%;
+  margin-top: 7%;
+  object-fit: contain;
+  z-index: 1000;
+}
+
+.plot-area__path {
+  height: 25%;
+  margin-top: -5%;
+  object-fit: contain;
+  z-index: 2000;
+}
+
+.plot-area__flowers {
+  width: 10%;
+  position: absolute;
+  object-fit: contain;
+}
+
+.plot-area__bush {
+  position: absolute;
+  height: 25%;
+  object-fit: contain;
+}
+
+.plot-area__bush-first {
+  bottom: 5%;
+  left: 5%;
+  transform: rotate(50deg);
+}
+
+.plot-area__bush-second {
+  top: 52%;
+  left: 62%;
+  transform: rotate(90deg);
+}

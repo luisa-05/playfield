@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="300"
+   height="300"
+   viewBox="0 0 79.374998 79.375"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.264583;stroke-dasharray:none;paint-order:fill markers stroke"
+       id="rect24-9"
+       width="18.520834"
+       height="0.79374999"
+       x="-22.554611"
+       y="-40.149399"
+       transform="scale(-1)" />
+    <path
+       id="rect30-3"
+       d="M 75.40625,39.290624 H 39.6875 v 0.79375 h 35.71875 z"
+       style="fill:#ffffff;stroke-width:0.141148;paint-order:stroke fill markers" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.393802;stroke-dasharray:none;paint-order:stroke fill markers"
+       id="rect30"
+       width="41.392239"
+       height="5.3317099"
+       x="3.96875"
+       y="-39.607494"
+       transform="matrix(0,0.86293351,0.14887344,0,45.187129,0.54398265)"
+       d="m 3.96875,-39.607494 h 41.392239 v 5.33171 H 3.96875 Z" />
+    <rect
+       style="fill:#666666;stroke-width:0.644198;paint-order:stroke fill markers"
+       id="rect1"
+       width="79.375"
+       height="79.375"
+       x="3.5527137e-15"
+       y="-79.375"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#ffffff;stroke-width:0.0697286;paint-order:stroke fill markers"
+       id="rect2-2"
+       width="0.79374999"
+       height="18.520834"
+       x="39.290623"
+       y="-22.489586"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#ffffff;stroke-width:0.0697286;paint-order:stroke fill markers"
+       id="rect2-9"
+       width="0.79374999"
+       height="18.520834"
+       x="39.290623"
+       y="-48.947918"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#ffffff;stroke-width:0.0697286;paint-order:stroke fill markers"
+       id="rect2"
+       width="0.79374999"
+       height="18.520834"
+       x="39.290623"
+       y="-75.40625"
+       transform="rotate(90)" />
+  </g>
+</svg>

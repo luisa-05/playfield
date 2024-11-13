@@ -1,0 +1,63 @@
+@import 'vars';
+
+.form {
+  position: absolute;
+  z-index: $form-z-index;
+  display: flex;
+  flex-direction: column;
+  gap: $form-gap;
+  background-color: $form-background-color;
+  padding: $form-padding;
+  border: $form-border;
+  border-radius: $form-border-radius;
+  font-size: $form-font-size;
+  box-shadow: 2px 2px 10px 2px #0000007e;
+
+  &__header {
+    display: flex;
+    align-items: center;
+  }
+
+  &__headline {
+    font-size: $form-headline-font-size;
+    font-weight: $form-headline-font-weight;
+  }
+
+  &__svg-cancel {
+    margin-left: auto;
+    align-self: flex-start;
+    fill: $street-color;
+    cursor: pointer;
+    width: $form-svg-cancel-width;
+  }
+
+  &__btn-container {
+    display: flex;
+    gap: 10px;
+
+    button {
+      padding: 0 5px;
+      cursor: pointer;
+      background: none;
+      border: $form-border;
+      border-radius: $form-border-radius;
+
+      &:hover {
+        background-color: #eee;
+      }
+    }
+  }
+
+  .btn-delete {
+    // padding: 1px 0;
+    font-size: $form-font-size-small;
+    cursor: pointer;
+    background: none;
+    border: $form-border;
+    border-radius: $form-border-radius;
+
+    &:hover {
+      background-color: #eee;
+    }
+  }
+}

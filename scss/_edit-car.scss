@@ -1,0 +1,10 @@
+@import 'vars';
+
+.edit-car {
+  gap: 14px;
+
+  &__select {
+    text-align: center;
+    font-size: $form-font-size-small;
+  }
+}

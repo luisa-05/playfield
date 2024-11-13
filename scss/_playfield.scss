@@ -1,0 +1,94 @@
+@import 'vars';
+
+.playfield-container {
+  display: flex;
+  flex: 2;
+  height: 100vh;
+  align-items: center;
+}
+
+.playfield {
+  position: fixed;
+  display: grid;
+  width: fit-content;
+  height: fit-content;
+  transform-origin: top left;
+  // margin-top: 10px;
+  margin-left: 25px;
+  box-shadow: 0px 0px 10px 3px #444;
+  // align-self: center;
+
+  &__tile {
+    // border: $border-tiles;
+    position: relative;
+
+    &--lawn {
+      background: $linear-gradient-lawn;
+    }
+
+    &--street {
+      background-color: $street-color;
+    }
+
+    &-street-svg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__tree {
+    z-index: $object-z-index;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: $height-icons;
+    z-index: $object-z-index;
+  }
+
+  &__lake {
+    z-index: $object-z-index;
+    position: absolute;
+    top: -5px;
+    right: 0;
+    height: $height-icons;
+  }
+
+  &__car {
+    z-index: $object-z-index;
+    position: absolute;
+    height: $height-icons;
+
+    .car-wheels {
+      fill: $car-wheels-color;
+    }
+
+    &--to-left {
+      top: -10px;
+    }
+
+    &--to-right {
+      bottom: -10px;
+      right: 0;
+      transform: rotateY(180deg);
+    }
+
+    &--frontside {
+      height: $car-frontside-height - 2;
+      left: 2px;
+      bottom: 1px;
+    }
+
+    &--backside {
+      right: 2px;
+      height: $car-frontside-height;
+    }
+  }
+
+  &__eventarea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+}

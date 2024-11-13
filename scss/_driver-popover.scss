@@ -1,0 +1,50 @@
+@import 'vars';
+
+.driver-popover.my-theme {
+  background-color: $background-color-driverjs;
+  transform: translateX(5%);
+}
+
+.driver-popover.my-theme .driver-popover-arrow-side-left.driver-popover-arrow {
+  border-left-color: $background-color-driverjs;
+}
+
+.driver-popover.my-theme .driver-popover-arrow-side-right.driver-popover-arrow {
+  border-right-color: $background-color-driverjs;
+}
+
+.driver-popover.my-theme .driver-popover-arrow-side-top.driver-popover-arrow {
+  border-top-color: $background-color-driverjs;
+}
+
+.driver-popover.my-theme
+  .driver-popover-arrow-side-bottom.driver-popover-arrow {
+  border-bottom-color: $background-color-driverjs;
+}
+
+.driver-popover.my-theme .driver-popover-title {
+  font: 19px 'Roboto';
+  font-weight: 600;
+}
+
+.driver-popover.my-theme .driver-popover-description {
+  font: 14px 'Roboto';
+}
+
+.driver-popover.my-theme .driver-popover-progress-text {
+  font-family: 'Roboto';
+  color: #444;
+}
+
+.driver-popover.my-theme .driver-popover-prev-btn,
+.driver-popover.my-theme .driver-popover-next-btn {
+  background-color: #6da86d;
+  color: #333;
+  text-shadow: none;
+  border: 1px solid #6ba16f;
+  font: 12px 'Roboto';
+
+  &:hover {
+    background-color: #72b472;
+  }
+}

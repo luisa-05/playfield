@@ -1,0 +1,17 @@
+@import 'vars';
+
+.edit-object {
+  gap: 5px;
+  padding: 7px;
+
+  .form__header {
+    gap: 15px;
+  }
+
+  &__delete {
+    cursor: pointer;
+    fill: $street-color;
+    width: 25px;
+    align-self: center;
+  }
+}

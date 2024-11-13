@@ -1,0 +1,62 @@
+:host {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #666;
+  border: 1px solid #ccc;
+  /* width: 140px;
+  height: 210px; */
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+span {
+  z-index: 100;
+  position: absolute;
+  padding: 2px 5px;
+  border-radius: 9px;
+  background-color: #eee;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  box-shadow: -1px 1px 10px #888;
+}
+
+.car-park-tile {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.car-park-tile--vertical {
+  border-bottom: 1px solid #eee;
+}
+
+.car-park-tile--vertical:nth-child(odd) {
+  border-right: 1px solid #eee;
+}
+
+.car-park-tile--horizontal {
+  border-right: 1px solid #eee;
+}
+
+svg {
+  position: absolute;
+  width: 35px;
+}
+
+.car-wheels {
+  fill: #000;
+}
+
+.playfield__car--to-right {
+  top: -5px;
+  transform: rotateY(180deg);
+}
+
+.playfield__car--frontside {
+  width: 20px;
+  top: 10px;
+  left: 5px;
+}
